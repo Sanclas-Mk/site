@@ -52,8 +52,8 @@ onMounted(() => {
       para construir o futuro digital do seu negócio.
     </h1>
     <botao
-      borda="border-black w-[210px] -translate-x-[124px]"
-      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 ml-6 botaoContato"
+      borda="border-black w-[216px] -translate-x-[110px]"
+      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 botaoContato"
       icone="fa-solid fa-arrow-right-long pl-2 pt-[6px]"
       texto="Entrar em contato"
       class="py-10 text-[18px] botaoContatoTotal"

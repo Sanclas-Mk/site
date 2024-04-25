@@ -63,7 +63,7 @@ onMounted(() => {
 
     <div
       ref="menu"
-      class="flex flex-col px-8 pt-4 leading-[60px] font-principal font-medium text-white text-[24px] bg-[#0E100F] overflow-hidden md:hidden h-screen touch-pan-up"
+      class="flex flex-col px-8 pt-4 leading-[60px] font-principal font-medium text-white text-[24px] bg-[#0E100F] overflow-hidden md:hidden touch-none"
     >
       <div id="link1" class="hover:border-b border-[#FBCFE8] pt-14">
         <router-link @click="closeMenu" to="/">Início</router-link>

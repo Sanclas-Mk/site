@@ -62,8 +62,8 @@ onMounted(() => {
 
     <div class="text-center">
       <botao
-        borda="border-black w-[240px] -translate-x-[140px] botaoPersonalizadoBorda"
-        bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-12 botaoPersonalizado"
+        borda="border-black w-[250px] -translate-x-[126px] botaoPersonalizadoBorda"
+        bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 botaoPersonalizado"
         icone="fa-solid fa-arrow-right-long pl-4 pt-[8px] translate-y-1 -rotate-[50deg]"
         texto="Pacote Personalizado"
         class="py-10 text-[18px] botaoPersonalizadoTotal"

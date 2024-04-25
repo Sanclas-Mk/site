@@ -32,7 +32,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="bg-[#0E100F] text-center h-[500px]">
+  <main class="bg-[#0E100F] text-center">
     <!-- Textos -->
     <div class="font-principal text-white pt-10 relative">
       <h1 class="text-[24px] font-semibold pb-4">Bem-vindo a MK Sanclas</h1>
@@ -52,15 +52,30 @@ onMounted(() => {
     </div>
 
     <!-- Imagem -->
-    <img src="" alt="" />
+    <div class="mt-14">
+      <div class="flex justify-center">
+        <img
+          class="h-[200px] w-auto imgProjeto"
+          src="/images/projetos/projeto1.png"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-center h-14">
+        <img
+          class="abosolute -translate-y-[170px] translate-x-[110px] h-[200px] w-auto imgProjetoM"
+          src="/images/projetos/projeto1mobile.png"
+          alt=""
+        />
+      </div>
+    </div>
 
     <!-- Botão -->
     <Botao
-      borda="border-[#FBCFE8] w-[172px] h-[40px] -translate-x-[105px]"
-      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[0px_2px_20px_-9px_rgba(232,46,232,1)] ml-20 botaoFazemos"
+      borda="border-[#FBCFE8] w-[176px] h-[40px] -translate-x-[88px]"
+      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[0px_2px_20px_-9px_rgba(232,46,232,1)] botaoFazemos"
       icone="fa-solid fa-arrow-down pl-2 pt-1"
       texto="O que fazemos?"
-      class="py-10 botaoFazemosTotal"
+      class="pb-20 pt-10 botaoFazemosTotal"
     />
   </main>
 </template>
