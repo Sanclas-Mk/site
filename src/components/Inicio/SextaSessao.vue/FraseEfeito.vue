@@ -3,7 +3,7 @@ import botao from "../../Botao.vue";
 </script>
 
 <template>
-  <div class="m-10 text-center font-principal">
+  <div class="mx-10 py-20 text-center font-principal">
     <h1 class="font-semibold text-[20px]">
       Não se contente com menos. Escolha a excelência. Escolha a Mk Sanclas
       <br />

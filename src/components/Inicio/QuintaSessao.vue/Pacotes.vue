@@ -41,7 +41,7 @@ onMounted(() => {
     .to(".botaoPersonalizado", {
       y: 14,
       x: 20,
-      duration: 0.8,
+      duration: 0.5,
     });
 });
 </script>
