@@ -14,7 +14,7 @@ onMounted(() => {
   let tlTitle = gsap.timeline({
     scrollTrigger: {
       trigger: ".importancia",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });
@@ -28,7 +28,7 @@ onMounted(() => {
   let tlImportancia = gsap.timeline({
     scrollTrigger: {
       trigger: ".cardsImportancia",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });
@@ -44,13 +44,13 @@ onMounted(() => {
 <template>
   <div class="font-principal py-20 importancia">
     <!-- Texto -->
-    <div class="text-center pb-4 textsImportancia">
+    <div class="text-center pb-4 textsImportancia mx-6">
       <h1 class="text-[20px] font-semibold titleImportancia">
         Por que ter um site hoje em dia?
       </h1>
       <h2 class="font-medium py-4 titleImportancia">
         Criar sites é uma estratégia crucial para indivíduos e empresas por
-        várias razões estatísticas e práticas
+        várias razões estatísticas e práticas:
       </h2>
     </div>
 

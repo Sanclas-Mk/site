@@ -14,7 +14,7 @@ onMounted(() => {
   let tlTitle = gsap.timeline({
     scrollTrigger: {
       trigger: ".pacotes",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });
@@ -28,7 +28,7 @@ onMounted(() => {
   let tlButton = gsap.timeline({
     scrollTrigger: {
       trigger: ".botaoPersonalizadoTotal",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });

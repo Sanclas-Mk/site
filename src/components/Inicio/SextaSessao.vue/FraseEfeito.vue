@@ -13,7 +13,7 @@ onMounted(() => {
   let tlTitle = gsap.timeline({
     scrollTrigger: {
       trigger: ".frase",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });
@@ -26,7 +26,7 @@ onMounted(() => {
   let tlButton = gsap.timeline({
     scrollTrigger: {
       trigger: ".botaoContatoTotal",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });

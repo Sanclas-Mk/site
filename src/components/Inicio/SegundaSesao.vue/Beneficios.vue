@@ -13,37 +13,35 @@ onMounted(() => {
   let tlTitle = gsap.timeline({
     scrollTrigger: {
       trigger: ".caixa",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });
   tlTitle.from(".texts .title", {
     y: -100,
     opacity: 0,
-    duration: 0.5,
+    duration: 0.8,
     stagger: 0.2,
   });
 
   let tlCards = gsap.timeline({
     scrollTrigger: {
       trigger: ".cards",
-      start: "-120px center",
+      start: "-120px 80%",
       end: "bottom center",
     },
   });
   tlCards.from(".cards .card", {
     x: -100,
     opacity: 0,
-    duration: 0.5,
+    duration: 0.8,
     stagger: 0.2,
   });
 });
 </script>
 
 <template>
-  <div
-    class="bg-[#FEF2F2] text-center font-principal px-8 py-20 font-semibold caixa"
-  >
+  <div class="text-center font-principal px-8 py-20 font-semibold caixa">
     <!-- Texto -->
     <div class="texts">
       <h1 class="text-[20px] title">
@@ -60,22 +58,22 @@ onMounted(() => {
     <!-- Cards com os Benefícios -->
     <div class="cards">
       <Card
-        estilo="bg-[#171615] text-white py-5 px-4  mt-7 card"
+        estilo="bg-[#171615] text-white py-5 px-4 mt-7 rounded-[8px] card"
         icone="fa-regular fa-paper-plane"
         texto="Sites Personalizados"
       />
       <Card
-        estilo="bg-[#FEE0F1] py-5 px-4 mt-3 card"
+        estilo="bg-[#FEE0F1] py-5 px-4 mt-4 rounded-[8px] card"
         icone="fa-regular fa-circle-check"
         texto="Técnicas SEO"
       />
       <Card
-        estilo="bg-[#FEE0F1] py-5 px-4 mt-3 card"
+        estilo="bg-[#FEE0F1] py-5 px-4 mt-4 rounded-[8px] card"
         icone="fa-regular fa-comments"
         texto="Suporte Eficiente"
       />
       <Card
-        estilo="bg-[#FEE0F1] py-5 px-4 mt-3 card"
+        estilo="bg-[#FEE0F1] py-5 px-4 mt-4 rounded-[8px] card"
         icone="fa-regular fa-handshake"
         texto="Serviços de Manutenção"
       />

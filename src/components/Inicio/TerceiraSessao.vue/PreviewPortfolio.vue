@@ -14,7 +14,7 @@ onMounted(() => {
   let tlTitle = gsap.timeline({
     scrollTrigger: {
       trigger: ".projetos",
-      start: "top center",
+      start: "top 80%",
       end: "bottom center",
     },
   });
@@ -41,7 +41,7 @@ onMounted(() => {
   let tlText = gsap.timeline({
     scrollTrigger: {
       trigger: ".textProjetos",
-      start: "-180px center",
+      start: "-180px 80%",
       end: "bottom center",
     },
   });

@@ -15,14 +15,17 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="m-4">
     <div class="flex justify-end">
       <span
         class="bg-[#CBFF4A] font-semibold text-[#333333] pl-4 pr-3 py-2 rounded-tl-lg"
         >{{ tags }}</span
       >
     </div>
-    <div :class="estilo" class="font-principal">
+    <div
+      :class="estilo"
+      class="font-principal mb-10 rounded-md rounded-tr-[0] shadow-lg"
+    >
       <!-- Texto Pacote -->
       <div>
         <div class="flex justify-between text-[20px] font-semibold">

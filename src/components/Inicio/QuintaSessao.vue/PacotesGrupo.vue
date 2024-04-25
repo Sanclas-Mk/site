@@ -26,7 +26,7 @@ onMounted(() => {
   let tlPacote2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".pacote2",
-      start: "-200px center",
+      start: "-200px 80%",
       end: "bottom center",
     },
   });
@@ -39,7 +39,7 @@ onMounted(() => {
   let tlPacote3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".pacote3  ",
-      start: "-220px center",
+      start: "-220px 80%",
       end: "bottom center",
     },
   });
@@ -90,7 +90,7 @@ const beneficiosPremium = [
 <template>
   <div class="pacotes-grupo">
     <Pacote
-      class="m-4 mb-10 rounded-md shadow-lg pacote1"
+      class="pacote1"
       tags="Portfólio | Página única..."
       estilo="p-6 bg-white "
       pacote="Essencial"
@@ -102,7 +102,7 @@ const beneficiosPremium = [
       estiloBeneficios="text-black/80"
     />
     <Pacote
-      class="m-4 mb-10 rounded-md shadow-lg pacote2"
+      class="pacote2"
       tags="Landing Page | Institucional..."
       estilo="p-6 bg-[#202020] text-white"
       pacote="Avançado"
@@ -114,7 +114,7 @@ const beneficiosPremium = [
       estiloBeneficios="text-white/80"
     />
     <Pacote
-      class="m-4 mb-10 rounded-md shadow-lg pacote3"
+      class="pacote3"
       tags="Blog | E-commerce..."
       estilo="p-6 bg-white"
       pacote="Premium"
