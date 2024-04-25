@@ -11,7 +11,7 @@ onMounted(() => {
       trigger: ".title",
       start: "-110px 90%",
       end: "-110px 60%",
-      markers: true,
+
       toggleActions: "restart none reverse none",
     },
     opacity: 0,
@@ -23,7 +23,7 @@ onMounted(() => {
       trigger: ".subtitle",
       start: "-120px 90%",
       end: "-120px 60%",
-      markers: true,
+
       toggleActions: "restart none reverse none",
     },
     opacity: 0,
@@ -35,8 +35,7 @@ onMounted(() => {
       trigger: ".card1",
       start: "-50px 90%",
       end: "-50px 60%",
-      id: "card1",
-      markers: true,
+
       toggleActions: "restart none reverse none",
     },
     opacity: 0,
@@ -48,8 +47,7 @@ onMounted(() => {
       trigger: ".card2",
       start: "-130px 90%",
       end: "-130px 60%",
-      id: "card2",
-      markers: true,
+
       toggleActions: "restart none reverse none",
     },
     opacity: 0,
@@ -61,8 +59,7 @@ onMounted(() => {
       trigger: ".card3",
       start: "-150px 90%",
       end: "-150px 60%",
-      id: "card3",
-      markers: true,
+
       toggleActions: "restart none reverse none",
     },
     opacity: 0,
@@ -74,8 +71,7 @@ onMounted(() => {
       trigger: ".card4",
       start: "-200px 90%",
       end: "-200px 60%",
-      id: "card4",
-      markers: true,
+
       toggleActions: "restart none reverse none",
     },
     opacity: 0,
