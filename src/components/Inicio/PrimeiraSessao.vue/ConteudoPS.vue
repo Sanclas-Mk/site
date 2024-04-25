@@ -1,5 +1,34 @@
 <script setup>
 import Botao from "../../Botao.vue";
+import { gsap, ScrollTrigger } from "gsap/all";
+import { onMounted } from "vue";
+
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.defaults({
+  toggleActions: "play none play reverse",
+});
+
+onMounted(() => {
+  let tlButton = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".botaoFazemosTotal",
+      start: "top center",
+      end: "bottom center",
+    },
+  });
+  tlButton
+    .from(".botaoFazemosTotal", {
+      y: -100,
+      opacity: 0,
+      duration: 0.8,
+    })
+    .to(".botaoFazemos", {
+      y: 14,
+      x: 20,
+      duration: 0.5,
+    });
+});
 </script>
 
 <template>
@@ -27,11 +56,11 @@ import Botao from "../../Botao.vue";
 
     <!-- Botão -->
     <Botao
-      borda="border-[#FBCFE8] w-[172px] -translate-x-[105px] -translate-y-3"
-      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[0px_2px_20px_-9px_rgba(232,46,232,1)]"
+      borda="border-[#FBCFE8] w-[172px] h-[40px] -translate-x-[105px]"
+      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[0px_2px_20px_-9px_rgba(232,46,232,1)] ml-20 botaoFazemos"
       icone="fa-solid fa-arrow-down pl-2 pt-1"
       texto="O que fazemos?"
-      class="py-10"
+      class="py-10 botaoFazemosTotal"
     />
   </main>
 </template>

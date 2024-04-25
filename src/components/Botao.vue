@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="z-0 relative">
-      <span :class="borda" class="h-10 border absolute"></span>
+      <span :class="borda" class="h-12 border absolute"></span>
     </div>
     <div class="z-10 relative">
       <button
-        class="py-2 px-4 font-principal font-bold text-24 flex mx-12"
+        class="py-2 px-4 font-principal font-bold text-24 flex"
         :class="bg"
       >
         <p>{{ texto }}</p>
