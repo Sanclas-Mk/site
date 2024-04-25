@@ -5,7 +5,7 @@
     </div>
     <div class="z-10 relative">
       <button
-        class="py-2 px-4 font-principal font-bold text-24 flex mx-auto"
+        class="py-2 px-4 font-principal font-bold text-24 flex mx-12"
         :class="bg"
       >
         <p>{{ texto }}</p>

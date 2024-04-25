@@ -10,8 +10,8 @@ import SlideContainer from "./SlideContainer.vue";
 const projects = [
   {
     title: "Projeto 1",
-    image: "/images/projetos/projeto1.png",
-    imagemobile: "/images/projetos/projeto1mobile.png",
+    image: "./images/projetos/projeto1.png",
+    imagemobile: "./images/projetos/projeto1mobile.png",
     alt: "",
   },
   {

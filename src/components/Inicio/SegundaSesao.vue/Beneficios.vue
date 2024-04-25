@@ -5,116 +5,77 @@ import { onMounted, ref } from "vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.defaults({
+  toggleActions: "play none play reverse",
+});
+
 onMounted(() => {
-  gsap.from(".title", {
+  let tlTitle = gsap.timeline({
     scrollTrigger: {
-      trigger: ".title",
-      start: "-110px 90%",
-      end: "-110px 60%",
-
-      toggleActions: "restart none reverse none",
+      trigger: ".caixa",
+      start: "top center",
+      end: "bottom center",
     },
-    opacity: 0,
-    y: 100,
-    duration: 1,
   });
-  gsap.from(".subtitle", {
-    scrollTrigger: {
-      trigger: ".subtitle",
-      start: "-120px 90%",
-      end: "-120px 60%",
-
-      toggleActions: "restart none reverse none",
-    },
+  tlTitle.from(".texts .title", {
+    y: -100,
     opacity: 0,
-    y: 100,
-    duration: 1,
+    duration: 0.5,
+    stagger: 0.2,
   });
-  gsap.from(".card1", {
-    scrollTrigger: {
-      trigger: ".card1",
-      start: "-50px 90%",
-      end: "-50px 60%",
 
-      toggleActions: "restart none reverse none",
+  let tlCards = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".cards",
+      start: "-120px center",
+      end: "bottom center",
     },
-    opacity: 0,
-    y: 100,
-    duration: 1,
   });
-  gsap.from(".card2", {
-    scrollTrigger: {
-      trigger: ".card2",
-      start: "-130px 90%",
-      end: "-130px 60%",
-
-      toggleActions: "restart none reverse none",
-    },
+  tlCards.from(".cards .card", {
+    x: -100,
     opacity: 0,
-    y: 100,
-    duration: 1,
-  });
-  gsap.from(".card3", {
-    scrollTrigger: {
-      trigger: ".card3",
-      start: "-150px 90%",
-      end: "-150px 60%",
-
-      toggleActions: "restart none reverse none",
-    },
-    opacity: 0,
-    y: 100,
-    duration: 1,
-  });
-  gsap.from(".card4", {
-    scrollTrigger: {
-      trigger: ".card4",
-      start: "-200px 90%",
-      end: "-200px 60%",
-
-      toggleActions: "restart none reverse none",
-    },
-    opacity: 0,
-    y: 100,
-    duration: 1,
+    duration: 0.5,
+    stagger: 0.2,
   });
 });
 </script>
 
 <template>
-  <div class="bg-[#FEF2F2] text-center font-principal px-8 py-10 font-semibold">
+  <div
+    class="bg-[#FEF2F2] text-center font-principal px-8 py-20 font-semibold caixa"
+  >
     <!-- Texto -->
-    <div>
+    <div class="texts">
       <h1 class="text-[20px] title">
         Desbloqueie o Potencial da sua Presença Online com um
         <span class="bg-[#E2A6FF] px-2 rounded-full">site</span> da Mk Sanclas!
       </h1>
-      <h2 class="pt-4 font-medium subtitle">
-        A Mk Sanclas se destaca por oferecer soluções de sites personalizados
-        que superam opções genéricas prontas para uso, proporcionando uma
-        abordagem sob medida para cada cliente.
+      <h2 class="pt-4 font-medium title">
+        A Mk Sanclas se destaca por oferecer soluções que superam opções
+        genéricas prontas para uso, proporcionando uma abordagem sob medida para
+        cada cliente com:
       </h2>
     </div>
 
     <!-- Cards com os Benefícios -->
-    <div>
+    <div class="cards">
       <Card
-        estilo="bg-[#171615] text-white py-5 px-4  mt-7 card1"
+        estilo="bg-[#171615] text-white py-5 px-4  mt-7 card"
         icone="fa-regular fa-paper-plane"
         texto="Sites Personalizados"
       />
       <Card
-        estilo="bg-[#FEE0F1] py-5 px-4  mt-7 card2"
+        estilo="bg-[#FEE0F1] py-5 px-4 mt-3 card"
         icone="fa-regular fa-circle-check"
         texto="Técnicas SEO"
       />
       <Card
-        estilo="bg-[#FEE0F1] py-5 px-4  mt-7 card3"
+        estilo="bg-[#FEE0F1] py-5 px-4 mt-3 card"
         icone="fa-regular fa-comments"
         texto="Suporte Eficiente"
       />
       <Card
-        estilo="bg-[#FEE0F1] py-5 px-4  mt-7 card4"
+        estilo="bg-[#FEE0F1] py-5 px-4 mt-3 card"
         icone="fa-regular fa-handshake"
         texto="Serviços de Manutenção"
       />
