@@ -10,43 +10,58 @@ ScrollTrigger.defaults({
 });
 
 onMounted(() => {
-  let tlImportancia = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pacotes-grupo",
-      start: "-120px center",
-      end: "bottom center",
-    },
-  });
-  tlImportancia.from(".pacotes-grupo .pacote1", {
-    y: 100,
-    opacity: 0,
-    duration: 0.8,
-  });
+  let mm = gsap.matchMedia();
+  mm.add("(max-width: 1023px)", () => {
+    let tlImportancia = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".pacotes-grupo",
+        start: "-120px center",
+        end: "bottom center",
+      },
+    });
+    tlImportancia.from(".pacotes-grupo .pacote1", {
+      y: 100,
+      opacity: 0,
+      duration: 0.8,
+    });
 
-  let tlPacote2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pacote2",
-      start: "-200px 80%",
-      end: "bottom center",
-    },
-  });
-  tlPacote2.from(".pacote2", {
-    y: 100,
-    opacity: 0,
-    duration: 0.8,
-  });
+    let tlPacote2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".pacote2",
+        start: "-200px 80%",
+        end: "bottom center",
+      },
+    });
+    tlPacote2.from(".pacote2", {
+      y: 100,
+      opacity: 0,
+      duration: 0.8,
+    });
 
-  let tlPacote3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".pacote3  ",
-      start: "-220px 80%",
-      end: "bottom center",
-    },
+    let tlPacote3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".pacote3  ",
+        start: "-220px 80%",
+        end: "bottom center",
+      },
+    });
+    tlPacote3.from(".pacote3", {
+      y: 100,
+      opacity: 0,
+      duration: 0.8,
+    });
   });
-  tlPacote3.from(".pacote3", {
-    y: 100,
-    opacity: 0,
-    duration: 0.8,
+  mm.add("(min-width: 1024px)", () => {
+    gsap.from(".pacotes-grupo", {
+      y: 100,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: ".pacotes-grupo",
+        start: "-200px center",
+        end: "top center",
+      },
+    });
   });
 });
 
@@ -88,7 +103,9 @@ const beneficiosPremium = [
 </script>
 
 <template>
-  <div class="pacotes-grupo">
+  <div
+    class="pacotes-grupo md:px-20 lg:px-0 lg:flex lg:space-x-4 lg:mx-4 xl:justify-center"
+  >
     <Pacote
       class="pacote1"
       tags="Portfólio | Página única..."
@@ -96,8 +113,8 @@ const beneficiosPremium = [
       pacote="Essencial"
       valor="R$ 650,00"
       estiloDescricao="text-black/80"
-      descricao="Um modo direto ao ponto. Para aqueles que buscam o rápido."
-      botao="bg-[#FBCFE8] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
+      descricao="Um modo direto ao ponto. Para aqueles que buscam rapidez e praticidade."
+      botao="bg-[#CBFF4A] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosEssencial"
       estiloBeneficios="text-black/80"
     />
@@ -109,7 +126,7 @@ const beneficiosPremium = [
       valor="R$ 1250,00"
       estiloDescricao="text-white/80"
       descricao="Um modo mais elaborado e refinado. Para aqueles que buscam algo a mais."
-      botao="bg-[#FBCFE8] text-black shadow-[0px_2px_18px_-9px_rgba(232,46,232,1)]"
+      botao="bg-[#CBFF4A] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosAvancado"
       estiloBeneficios="text-white/80"
     />
@@ -121,7 +138,7 @@ const beneficiosPremium = [
       valor="R$ 3500,00"
       estiloDescricao="text-black/80"
       descricao="Um modo completo e bem otimizado. Para aqueles que buscam completude."
-      botao="bg-[#FBCFE8] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
+      botao="bg-[#CBFF4A] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosPremium"
       estiloBeneficios="text-black/80"
     />

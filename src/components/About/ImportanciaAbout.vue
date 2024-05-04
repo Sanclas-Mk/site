@@ -1,6 +1,5 @@
 <script setup>
-import cardsInfo from "./cardsInfo.vue";
-
+import CardsAbout from "./CardsAbout.vue";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { onMounted, ref } from "vue";
 
@@ -19,7 +18,7 @@ onMounted(() => {
     },
   });
   tlTitle.from(".textsImportancia .titleImportancia", {
-    y: -100,
+    y: -50,
     opacity: 0,
     duration: 0.8,
     stagger: 0.2,
@@ -35,7 +34,7 @@ onMounted(() => {
   tlImportancia.from(".cardsImportancia .cardImportancia", {
     y: 100,
     opacity: 0,
-    duration: 0.5,
+    duration: 0.8,
     stagger: 0.2,
   });
 });
@@ -53,12 +52,11 @@ onMounted(() => {
       <h2
         class="font-medium py-4 md:text-[18px] xl:text-[20px] titleImportancia"
       >
-        Criar sites é uma estratégia crucial para indivíduos e empresas por
-        várias razões estatísticas e práticas:
+        Ter um site é essencial para estabelecer uma presença online sólida!
       </h2>
     </div>
 
     <!-- Cards com informações -->
-    <cards-info class="cardsImportancia" />
+    <cards-about class="cardsImportancia" />
   </div>
 </template>

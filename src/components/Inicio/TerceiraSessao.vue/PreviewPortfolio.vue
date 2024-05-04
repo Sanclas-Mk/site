@@ -55,11 +55,14 @@ onMounted(() => {
 
 <template>
   <div
-    class="bg-[#0E100F] text-white text-center px-8 py-20 font-principal projetos"
+    id="portfolio"
+    class="bg-[#0E100F] text-white text-center px-8 py-20 font-principal md:px-20 lg:text-left relative projetos"
   >
     <!-- Texto -->
     <div class="pb-4 textsProjetos">
-      <h1 class="font-semibold text-[20px] px-2 titleProjeto">
+      <h1
+        class="font-semibold text-[20px] px-2 md:text-[26px] xl:text-[30px] titleProjeto"
+      >
         Na Mk Sanclas, não apenas construímos sites, <br />
         <div class="mt-2">
           <span class="bg-[#EEF2FF] text-black rounded-full px-2 py-1"
@@ -68,16 +71,23 @@ onMounted(() => {
           digitais excepcionais.
         </div>
       </h1>
-      <h2 class="mt-6 font-medium titleProjeto">
+      <h2 class="mt-6 font-medium md:text-[18px] lg:hidden titleProjeto">
         Conheça alguns dos nossos projetos:
+      </h2>
+      <!-- Texto -->
+      <h2
+        class="font-medium text-[18px] xl:text-[20px] xl:mr-[350px] pt-6 pl-2 text-white/80 max-lg:hidden textProjetos"
+      >
+        Cada site que entregamos é uma obra-prima única, projetada para cativar
+        seu público-alvo e destacar sua marca de maneira memorável.
       </h2>
     </div>
 
     <!-- Projetos/ Imagens -->
-    <Projetos class="projetosInfo" />
+    <Projetos class="projetosInfo lg:pt-20" />
 
     <!-- Texto -->
-    <h2 class="font-medium pt-6 textProjetos">
+    <h2 class="font-medium pt-6 md:text-[18px] lg:hidden textProjetos">
       Cada site que entregamos é uma obra-prima única, projetada para cativar
       seu público-alvo e destacar sua marca de maneira memorável.
     </h2>

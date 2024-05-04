@@ -9,15 +9,15 @@
     >
       <slide :project="project"></slide>
     </div>
-    <div class="space-x-10 py-8">
+    <div class="space-x-10 py-8 text-center">
       <button @click="prevSlide">
         <i
-          class="fa-solid fa-chevron-left border px-3 py-2 rounded-full text-[20px] text-[#FEF2F2] hover:text-[#E2A6FF] hover:border-[#E2A6FF]"
+          class="fa-solid fa-chevron-left border px-3 py-2 rounded-full text-[20px] text-[#FEF2F2] hover:text-[#E2A6FF] hover:border-[#E2A6FF] xl:text-[24px]"
         ></i>
       </button>
       <button @click="nextSlide">
         <i
-          class="fa-solid fa-chevron-right border px-3 py-2 rounded-full text-[20px] text-[#FEF2F2] hover:text-[#E2A6FF] hover:border-[#E2A6FF]"
+          class="fa-solid fa-chevron-right border px-3 py-2 rounded-full text-[20px] text-[#FEF2F2] hover:text-[#E2A6FF] hover:border-[#E2A6FF] xl:text-[24px]"
         ></i>
       </button>
     </div>
