@@ -41,6 +41,18 @@ onMounted(() => {
       x: 20,
       duration: 0.5,
     });
+
+  const botao = document.querySelector(".botaoContato");
+  const gradienteOriginal = "linear-gradient(to right, #8B9EFF, #EAEDFF)";
+  const gradienteHover = "linear-gradient(to right, #8B9EFF, #8B9EFF)";
+
+  botao.addEventListener("mouseover", () => {
+    gsap.to(botao, { backgroundImage: gradienteHover, duration: 0.8 });
+  });
+
+  botao.addEventListener("mouseleave", () => {
+    gsap.to(botao, { backgroundImage: gradienteOriginal, duration: 0.8 });
+  });
 });
 </script>
 

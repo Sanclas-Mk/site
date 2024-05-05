@@ -45,12 +45,12 @@ onMounted(() => {
     <!-- Texto -->
     <div class="text-center pb-4 lg:text-left lg:mr-[300px] textsImportancia">
       <h1
-        class="text-[20px] md:text-[26px] xl:text-[30px] font-semibold titleImportancia"
+        class="text-[26px] md:text-[28px] xl:text-[30px] font-semibold titleImportancia"
       >
         Por que ter um site hoje em dia?
       </h1>
       <h2
-        class="font-medium py-4 md:text-[18px] xl:text-[20px] titleImportancia"
+        class="font-medium py-4 md:text-[18px] xl:text-[20px] text-[#353535] titleImportancia"
       >
         Ter um site é essencial para estabelecer uma presença online sólida!
       </h2>

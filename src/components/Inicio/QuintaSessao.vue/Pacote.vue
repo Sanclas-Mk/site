@@ -18,7 +18,7 @@ export default {
   <div class="m-4 lg:m-0 lg:w-[400px] xl:w-[350px]">
     <div class="flex justify-end">
       <span
-        class="bg- font-semibold text-[#333333] pl-4 pr-3 py-2 rounded-tl-lg"
+        class="bg-[#D4FE6C] font-semibold text-[#333333] pl-4 pr-3 py-2 rounded-tl-lg"
         >{{ tags }}</span
       >
     </div>

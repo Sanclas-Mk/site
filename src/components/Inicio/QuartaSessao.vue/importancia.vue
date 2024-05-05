@@ -51,9 +51,9 @@ onMounted(() => {
         Por que ter um site hoje em dia?
       </h1>
       <h2
-        class="font-medium py-4 md:text-[18px] xl:text-[20px] titleImportancia"
+        class="font-medium py-4 md:text-[18px] xl:text-[20px] text-[#353535] titleImportancia"
       >
-        Criar sites é uma estratégia crucial para indivíduos e empresas por
+        Ter um site é uma estratégia crucial para indivíduos e empresas por
         várias razões estatísticas e práticas:
       </h2>
     </div>

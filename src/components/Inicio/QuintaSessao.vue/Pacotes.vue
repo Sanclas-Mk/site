@@ -41,9 +41,9 @@ onMounted(() => {
 
 <template>
   <div id="pacotes" class="font-principal py-20 lg:px-0 bg-[#EEF2FF] pacotes">
-    <div class="flex xl:justify-center xl:space-x-[110px]">
+    <div>
       <div
-        class="text-center pb-4 lg:text-left textsPacotes px-10 lg:px-14 lg:pb-20 lg:w-[730px]"
+        class="text-center pb-4 lg:text-left textsPacotes px-10 xl:pr-[420px] xl:px-44 lg:pb-20"
       >
         <h1
           class="text-[20px] md:text-[26px] xl:text-[30px] font-semibold titlePacotes"
@@ -54,7 +54,7 @@ onMounted(() => {
           Uma Jornada de Benefícios e Eficiência!
         </h2>
       </div>
-      <div class="text-center max-lg:hidden pacotePersonalizadoBotao">
+      <div class="hidden text-center pacotePersonalizadoBotao">
         <botao
           borda="border-black w-[250px] -translate-x-[140px] -translate-y-[14px]"
           bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto "
@@ -67,7 +67,7 @@ onMounted(() => {
 
     <pacotes-grupo />
 
-    <div class="text-center lg:hidden">
+    <div class="text-center hidden">
       <botao
         borda="border-black w-[250px] -translate-x-[140px] -translate-y-[14px]"
         bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto"

@@ -26,62 +26,67 @@ onMounted(() => {
     .to(".botaoFazemos", {
       y: 14,
       x: 20,
+
       duration: 0.5,
     });
 
   let tlImg = gsap.timeline({
     scrollTrigger: {
       trigger: ".imgs",
-      start: "top center",
+      start: "-120px center",
       end: "bottom center",
     },
   });
   tlImg.from(".imgShow", {
     x: "-100px",
-    duration: 0.5,
+    duration: 0.8,
     opacity: 0,
+  });
+
+  const botao = document.querySelector(".botaoFazemos");
+  const gradienteOriginal = "linear-gradient(to right, #8B9EFF, #EAEDFF)";
+  const gradienteHover = "linear-gradient(to right, #8B9EFF, #8B9EFF)";
+
+  botao.addEventListener("mouseover", () => {
+    gsap.to(botao, { backgroundImage: gradienteHover, duration: 0.8 });
+  });
+
+  botao.addEventListener("mouseleave", () => {
+    gsap.to(botao, { backgroundImage: gradienteOriginal, duration: 0.8 });
   });
 });
 </script>
 
 <template>
-  <main class="bg-[#0E100F] text-center">
+  <main class="bg-[#0E100F] text-center lg:pt-12 xl:pt-16">
     <div
-      class="lg:flex lg:justify-center lg:space-x-10 xl:space-x-20 items-center lg:text-left xl:pt-10"
+      class="xl:flex xl:justify-center xl:space-x-20 items-center xl:text-left"
     >
       <!-- Textos -->
       <div>
         <div
-          class="font-principal text-white pt-10 relative lg:text-center xl:text-left lg:w-[480px] xl:w-[520px]"
+          class="font-principal text-white relative xl:text-left xl:w-[520px] mx-4 md:mx-14 xl:border-l-2 border-[#8888E6] xl:px-10 rounded-[4px] pt-10 xl:py-4"
         >
           <h1 class="text-[24px] md:text-[30px] font-semibold pb-4">
             Nós executamos
-            <span class="bg-[#D4FE6C] text-black px-2 py-1 rounded-full">
+            <span class="text-[#D4FE6C] px-2 py-1 rounded-full">
               a novidade</span
             >
-            do
+
             <br class="xl:hidden" />
-            mundo tecnológico <br />
-            E encaixar você neste mundo <br />
-            <span class="bg-[#EEF2FF] text-black px-2 py-1 rounded-full"
-              >é a nossa prioridade!</span
+            do mundo tecnológico <br />
+            E encaixar você neste mundo <br />é a nossa
+            <span class="text-[#D4FE6C] px-2 py-1 rounded-full"
+              >prioridade!</span
             >
           </h1>
-          <h2 class="md:text-[18px] xl:text-[20px] font-medium leading-8 pt-4">
-            Fazemos sites personalizados para o seu negócio crescer ainda mais
-            pela internet!
+          <h2
+            class="md:text-[18px] xl:text-[20px] text-[#C2C2C2] font-medium leading-8 pt-4 md:px-[150px] lg:px-[200px] xl:px-0"
+          >
+            Fazemos sites personalizados para o seu estilo e com o que há de
+            mais novo no mundo da tecnologia.
           </h2>
         </div>
-        <!-- Botão -->
-
-        <Botao
-          link="#beneficios"
-          borda="border-[#FBCFE8] w-[176px] h-[40px] -translate-x-[88px] md:w-[210px] md:-translate-x-[106px] md:h-[45px]"
-          bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[0px_2px_20px_-9px_rgba(232,46,232,1)] botaoFazemos md:text-[20px]"
-          icone="fa-solid fa-arrow-down pl-2 pt-1"
-          texto="O que fazemos?"
-          class="pb-0 pt-10 lg:hidden botaoFazemosTotal"
-        />
       </div>
       <!-- Imagem -->
       <div class="mt-14 imgs mx-6">
@@ -107,10 +112,10 @@ onMounted(() => {
     <Botao
       link="#beneficios"
       borda="border-[#FBCFE8] w-[176px] h-[40px] -translate-x-[88px] md:w-[210px] md:-translate-x-[106px] md:h-[45px] "
-      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[0px_2px_20px_-9px_rgba(232,46,232,1)] botaoFazemos md:text-[20px]"
+      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[1px_5px_10px_-5px_rgba(136,136,230,1)] botaoFazemos md:text-[20px]"
       icone="fa-solid fa-arrow-down pl-2 pt-1"
       texto="O que fazemos?"
-      class="pb-0 pt-10 lg:pb-20 botaoFazemosTotal max-lg:hidden"
+      class="pb-20 pt-10 lg:pb-20 botaoFazemosTotal"
     />
   </main>
 </template>

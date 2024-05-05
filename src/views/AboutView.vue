@@ -32,34 +32,50 @@ onMounted(() => {
     },
   });
   tlButton
-    .from(".botaoContatoTotal", {
+    .from(".botaoContatoSomosTotal", {
       y: -100,
       opacity: 0,
       duration: 0.8,
     })
-    .to(".botaoContato", {
+    .to(".botaoContatoSomos", {
       y: 14,
       x: 20,
       duration: 0.5,
     });
+
+  const botao = document.querySelector(".botaoContatoSomos");
+  const gradienteOriginal = "linear-gradient(to right, #FBCFE8, #8B9EFF)";
+  const gradienteHover = "linear-gradient(to right, #FBCFE8, #FBCFE8)";
+
+  botao.addEventListener("mouseover", () => {
+    gsap.to(botao, { backgroundImage: gradienteHover, duration: 0.8 });
+  });
+
+  botao.addEventListener("mouseleave", () => {
+    gsap.to(botao, { backgroundImage: gradienteOriginal, duration: 0.8 });
+  });
 });
 </script>
 
 <template>
-  <div class="somos">
+  <div class="somos lg:pt-10">
     <div
-      class="text-center font-principal px-10 lg:px-20 xl:px-40 pt-10 md:flex md:space-x-10"
+      class="text-center lg:text-left font-principal md:px-20 xl:px-[200px] lg:flex md:space-x-10"
     >
-      <div class="textsSomos">
-        <h2 class="font-medium md:text-[18px] xl:text-[20px] titleSomos">
-          Conheça a Mk Sanclas
-        </h2>
-        <h1
-          class="pb-6 pt-2 text-[20px] md:text-[26px] xl:text-[30px] font-semibold titleSomos"
-        >
-          Quem somos?
-        </h1>
-        <div class="text-center titleSomos">
+      <div class="textsSomos xl:px-20">
+        <div class="pt-10">
+          <h1
+            class="text-[26px] md:text-[28px] xl:text-[30px] font-bold titleSomos"
+          >
+            Quem somos?
+          </h1>
+          <h2
+            class="font-semibold md:text-[18px] xl:text-[20px] pb-6 pt-4 titleSomos"
+          >
+            Conheça a Mk Sanclas!
+          </h2>
+        </div>
+        <div class="px-4 lg:px-0 lg:text-justify py-4 titleSomos">
           <p>
             Bem-vindo à Mk Sanclas, uma empresa especializada no Desenvolvimento
             de Sites, que começou com um jovem casal sonhador. Nosso objetivo é
@@ -67,7 +83,7 @@ onMounted(() => {
             nossos clientes. Mantendo a novidade, a eficiência, a beleza e
             satisfação para aqueles que decidem fechar negócio conosco!
           </p>
-          <p class="pt-10 max-lg:hidden">
+          <p class="pt-10 max-md:hidden lg:hidden">
             Fizemos pesquisas e observamos que muitas empresas fazem trabalhos
             comuns que não levam os seus clientes a um novo patamar. E decidimos
             entrar no mercado para mudar isso! Queremos destacar nossos clientes
@@ -76,22 +92,22 @@ onMounted(() => {
           </p>
         </div>
         <Botao
-          borda="border-black w-[250px] -translate-x-[140px] -translate-y-[14px]"
-          bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto botaoContato"
+          borda="border-black w-[230px] -translate-x-[118px] -translate-y-[1px]"
+          bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto botaoContatoSomos"
           icone="fa-solid fa-arrow-right-long pl-4 pt-[8px] translate-y-1 -rotate-[50deg]"
           texto="Entrar em Contato!"
-          class="py-10 text-[18px] botaoContatoTotal"
+          class="py-10 text-[18px] text-center botaoContatoSomosTotal"
         />
       </div>
       <div>
         <img
-          class="h-auto md:w-[2000px] md:pt-16"
+          class="h-auto md:w-[2000px] pt-10 md:pt-16"
           src="/images/projetos/projeto1.png"
           alt=""
         />
       </div>
     </div>
-    <div id="importancia"><importancia-about /></div>
+    <div><importancia-about id="importancia" /></div>
   </div>
 </template>
 
