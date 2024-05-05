@@ -114,7 +114,7 @@ const beneficiosPremium = [
       valor="R$ 650,00"
       estiloDescricao="text-black/80"
       descricao="Um modo direto ao ponto. Para aqueles que buscam rapidez e praticidade."
-      botao="bg-[#CFD6FF] hover:bg-[#FCF4F9] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
+      botao="bg-[#e7c4ee] hover:bg-[#FCF4F9] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosEssencial"
       estiloBeneficios="text-black/80"
     />
@@ -126,7 +126,7 @@ const beneficiosPremium = [
       valor="R$ 1250,00"
       estiloDescricao="text-white/80"
       descricao="Um modo mais elaborado e refinado. Para aqueles que buscam algo a mais."
-      botao="bg-[#CFD6FF] hover:bg-[#DBDFFA] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
+      botao="bg-[#e7c4ee] hover:bg-[#DBDFFA] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosAvancado"
       estiloBeneficios="text-white/80"
     />
@@ -138,7 +138,7 @@ const beneficiosPremium = [
       valor="R$ 3500,00"
       estiloDescricao="text-black/80"
       descricao="Um modo completo e bem otimizado. Para aqueles que buscam completude."
-      botao="bg-[#CFD6FF] hover:bg-[#DBDFFA] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
+      botao="bg-[#e7c4ee] hover:bg-[#DBDFFA] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosPremium"
       estiloBeneficios="text-black/80"
     />

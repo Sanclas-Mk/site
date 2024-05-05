@@ -51,7 +51,7 @@ onMounted(() => {
     <!-- Texto -->
     <div class="texts lg:mr-[300px] xl:mr-[510px]">
       <h1
-        class="text-[20px] md:text-[26px] xl:text-[30px] border-b-[2px] border-[#D4FE6C] p-4 lg:px-0 title"
+        class="text-[20px] md:text-[26px] xl:text-[30px] p-4 lg:px-0 border-b-2 border-[#e7c4ee] title"
       >
         Desbloqueie o Potencial da sua Presença Online com um site da Mk
         Sanclas!
@@ -73,17 +73,17 @@ onMounted(() => {
         titulo="Sites Personalizados"
       />
       <Card
-        estilo="bg-[#FEE0F1] flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
+        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-circle-check "
         titulo="Técnicas SEO"
       />
       <Card
-        estilo="bg-[#FEE0F1] flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
+        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-comments"
         titulo="Suporte Eficiente"
       />
       <Card
-        estilo="bg-[#FEE0F1] flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
+        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-handshake"
         titulo="Serviços de Manutenção"
       />

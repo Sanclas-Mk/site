@@ -39,7 +39,7 @@ onMounted(() => {
   createMenuTimeline();
 
   const botao = document.querySelector(".botaoContato");
-  const gradienteOriginal = "linear-gradient(to right, #8B9EFF, #EAEDFF)";
+  const gradienteOriginal = "linear-gradient(to right, #e7c4ee, #e7c4ee)";
   const gradienteHover = "linear-gradient(to right, #8B9EFF, #8B9EFF)";
 
   botao.addEventListener("mouseover", () => {
@@ -73,7 +73,7 @@ onMounted(() => {
       <div class="lg:pt-2 max-lg:invisible max-lg:absolute">
         <a
           href=""
-          class="p-3 font-bold font-principal bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] rounded-lg botaoContato shadow-[1px_5px_24px_-10px_rgba(136,136,230,1)]"
+          class="p-3 font-bold font-principal bg-[#e7c4ee] rounded-lg botaoContato shadow-[1px_5px_24px_-10px_rgba(136,136,230,1)] hover:text-white"
           >Entrar em contato!</a
         >
       </div>

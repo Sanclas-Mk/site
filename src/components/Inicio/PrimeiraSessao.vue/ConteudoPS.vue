@@ -13,7 +13,7 @@ onMounted(() => {
   let tlButton = gsap.timeline({
     scrollTrigger: {
       trigger: ".botaoFazemosTotal",
-      start: "-100 center",
+      start: "-150px center",
       end: "bottom center",
     },
   });
@@ -43,6 +43,19 @@ onMounted(() => {
     opacity: 0,
   });
 
+  let textoInicio = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".imgs",
+      start: "-120px center",
+      end: "bottom center",
+    },
+  });
+  textoInicio.from(".textoInicio", {
+    y: "-100px",
+    duration: 0.8,
+    opacity: 0,
+  });
+
   const botao = document.querySelector(".botaoFazemos");
   const gradienteOriginal = "linear-gradient(to right, #8B9EFF, #EAEDFF)";
   const gradienteHover = "linear-gradient(to right, #8B9EFF, #8B9EFF)";
@@ -67,7 +80,7 @@ onMounted(() => {
         <div
           class="font-principal text-white relative xl:text-left xl:w-[520px] mx-4 md:mx-14 xl:border-l-2 border-[#8888E6] xl:px-10 rounded-[4px] pt-10 xl:py-4"
         >
-          <h1 class="text-[24px] md:text-[30px] font-semibold pb-4">
+          <h1 class="text-[24px] md:text-[30px] font-semibold pb-4 textoInicio">
             Nós executamos
             <span class="text-[#D4FE6C] px-2 py-1 rounded-full">
               a novidade</span
@@ -81,7 +94,7 @@ onMounted(() => {
             >
           </h1>
           <h2
-            class="md:text-[18px] xl:text-[20px] text-[#C2C2C2] font-medium leading-8 pt-4 md:px-[150px] lg:px-[200px] xl:px-0"
+            class="md:text-[18px] xl:text-[20px] text-[#C2C2C2] font-medium leading-8 pt-4 md:px-[150px] lg:px-[200px] xl:px-0 textoInicio"
           >
             Fazemos sites personalizados para o seu estilo e com o que há de
             mais novo no mundo da tecnologia.
