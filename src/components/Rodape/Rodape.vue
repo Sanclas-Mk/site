@@ -14,7 +14,7 @@ import RedesSociais from "../RedesSociais.vue";
       />
       <redes-sociais class="md:hidden text-[28px] space-x-2" />
       <Navbar
-        class="text-[16px] md:text-[18px] max-md:leading-[40px] max-md:pb-4"
+        class="text-[16px] md:text-[18px] max-md:leading-[55px] max-md:pb-4"
       />
     </div>
     <div

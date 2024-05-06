@@ -43,13 +43,10 @@ onMounted(() => {
 <template>
   <div
     id="beneficios"
-    class="text-center lg:text-left font-principal px-8 py-20 pt-10 md:px-20 font-semibold relative caixa"
+    class="text-center lg:text-left font-principal px-8 py-20 pt-10 md:px-20 font-semibold relative caixa xl:py-32 xl:mx-[100px]"
   >
-    <div
-      class="absolute h-[300px] w-[300px] xl:h-[400px] xl:w-[400px] right-0 top-0 rounded-bl-full bg-[#D4FE6C] max-lg:hidden"
-    ></div>
     <!-- Texto -->
-    <div class="texts lg:mr-[300px] xl:mr-[510px]">
+    <div class="texts lg:mr-[300px] xl:mr-[350px]">
       <h1
         class="text-[20px] md:text-[26px] xl:text-[30px] p-4 lg:px-0 border-b-2 border-[#e7c4ee] title"
       >
@@ -65,7 +62,7 @@ onMounted(() => {
 
     <!-- Cards com os Benefícios -->
     <div
-      class="cards md:mx-20 lg:mx-0 pt-4 md:text-[18px] lg:grid lg:grid-cols-2 lg:gap-6 lg:mr-[120px] lg:mt-10 xl:mr-[500px] items-center"
+      class="cards md:mx-20 lg:mx-0 pt-4 md:text-[18px] lg:grid lg:grid-cols-2 lg:gap-6 lg:mr-[120px] lg:mt-10 xl:mr-[350px] items-center"
     >
       <Card
         estilo="bg-[#171615] flex justify-center text-white py-5 px-4 mt-7 rounded-[8px] lg:mt-0 card"
@@ -85,7 +82,7 @@ onMounted(() => {
       <Card
         estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-handshake"
-        titulo="Serviços de Manutenção"
+        titulo="Manutenção"
       />
     </div>
   </div>

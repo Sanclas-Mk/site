@@ -9,15 +9,25 @@ import SlideContainer from "./SlideContainer.vue";
 
 const projects = [
   {
-    title: "Projeto 1",
-    image: "./images/projetos/projeto1.png",
-    imagemobile: "./images/projetos/projeto1mobile.png",
+    title: "Pizzaria",
+    image: "./images/projetos/PizzariaDesktop.png",
+    imagemobile: "./images/projetos/PizzariaMobile.png",
     alt: "",
   },
   {
-    title: "Projeto 2",
-    image: "",
-    alt: "",
+    title: "Bipp",
+    image: "./images/projetos/BippDesktop.png",
+    imagemobile: "./images/projetos/BippMobile.png",
+  },
+  {
+    title: "ED - Educação a Distância",
+    image: "./images/projetos/EDDesktop.png",
+    imagemobile: "./images/projetos/EDMobile.png",
+  },
+  {
+    title: "Site de Roupas E-commerce",
+    image: "./images/projetos/EcommerceDesktop.png",
+    imagemobile: "./images/projetos/EcommerceMobile.png",
   },
 ];
 </script>

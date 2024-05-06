@@ -109,19 +109,19 @@ const beneficiosPremium = [
     <Pacote
       class="pacote1"
       tags="Portfólio | Página única..."
-      estilo="p-6 bg-white "
+      estilo="p-6 border-[1px] border-black/50 "
       pacote="Essencial"
       valor="R$ 650,00"
       estiloDescricao="text-black/80"
-      descricao="Um modo direto ao ponto. Para aqueles que buscam rapidez e praticidade."
-      botao="bg-[#e7c4ee] hover:bg-[#FCF4F9] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
+      descricao="Um modo direto ao ponto. Para aqueles que buscam praticidade."
+      botao="bg-[#e7c4ee] hover:bg-[#DBDFFA] text-black shadow-[0px_2px_14px_-9px_rgba(92,92,92,1)]"
       :beneficios="beneficiosEssencial"
       estiloBeneficios="text-black/80"
     />
     <Pacote
       class="pacote2"
       tags="Landing Page | Institucional..."
-      estilo="p-6 bg-[#202020] text-white"
+      estilo="p-6 bg-[#252525] text-white"
       pacote="Avançado"
       valor="R$ 1250,00"
       estiloDescricao="text-white/80"
@@ -133,7 +133,7 @@ const beneficiosPremium = [
     <Pacote
       class="pacote3"
       tags="Blog | E-commerce..."
-      estilo="p-6 bg-white"
+      estilo="p-6 border-[1px] border-black/50"
       pacote="Premium"
       valor="R$ 3500,00"
       estiloDescricao="text-black/80"

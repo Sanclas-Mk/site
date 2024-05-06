@@ -1,4 +1,3 @@
-<!-- SlideContainer.vue -->
 <template>
   <div class="slide-container">
     <div
@@ -7,7 +6,7 @@
       :class="{ active: index === currentIndex }"
       class="slide"
     >
-      <slide :project="project"></slide>
+      <slide ref="slides" :project="project"></slide>
     </div>
     <div class="space-x-10 py-8 text-center">
       <button @click="prevSlide">
@@ -26,32 +25,59 @@
 
 <script>
 import Slide from "./Slide.vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 export default {
   components: {
     Slide,
   },
   props: ["projects"],
-  data() {
-    return {
-      currentIndex: 0,
+
+  setup(props) {
+    const currentIndex = ref(0);
+    const slides = ref([]);
+    let intervalId;
+
+    const prevSlide = () => {
+      stopAutoPlay();
+      currentIndex.value =
+        (currentIndex.value - 1 + props.projects.length) %
+        props.projects.length;
+
+      startAutoPlay();
     };
-  },
-  methods: {
-    prevSlide() {
-      if (this.currentIndex === 0) {
-        this.currentIndex = this.projects.length - 1;
-      } else {
-        this.currentIndex--;
-      }
-    },
-    nextSlide() {
-      if (this.currentIndex === this.projects.length - 1) {
-        this.currentIndex = 0;
-      } else {
-        this.currentIndex++;
-      }
-    },
+
+    const nextSlide = () => {
+      stopAutoPlay();
+      currentIndex.value = (currentIndex.value + 1) % props.projects.length;
+
+      startAutoPlay();
+    };
+
+    const startAutoPlay = () => {
+      intervalId = setInterval(() => {
+        nextSlide();
+      }, 5000);
+    };
+
+    const stopAutoPlay = () => {
+      clearInterval(intervalId);
+    };
+
+    onMounted(() => {
+      slides.value = document.querySelectorAll(".slide");
+      startAutoPlay();
+    });
+
+    onBeforeUnmount(() => {
+      stopAutoPlay();
+    });
+
+    return {
+      currentIndex,
+      prevSlide,
+      nextSlide,
+    };
   },
 };
 </script>

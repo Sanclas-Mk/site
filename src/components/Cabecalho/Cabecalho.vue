@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from "./Navbar.vue";
 import { ref, watchEffect, onMounted } from "vue";
-import { gsap, Power4 } from "gsap";
+import { gsap } from "gsap";
 
 const isMenuOpen = ref(false);
 const menu = ref(null);
@@ -38,7 +38,7 @@ watchEffect(() => {
 onMounted(() => {
   createMenuTimeline();
 
-  const botao = document.querySelector(".botaoContato");
+  const botao = document.querySelector(".botaoContatoCabeca");
   const gradienteOriginal = "linear-gradient(to right, #e7c4ee, #e7c4ee)";
   const gradienteHover = "linear-gradient(to right, #8B9EFF, #8B9EFF)";
 
@@ -72,8 +72,9 @@ onMounted(() => {
       <Navbar class="max-lg:hidden lg:mx-auto text-[22px]" />
       <div class="lg:pt-2 max-lg:invisible max-lg:absolute">
         <a
-          href=""
-          class="p-3 font-bold font-principal bg-[#e7c4ee] rounded-lg botaoContato shadow-[1px_5px_24px_-10px_rgba(136,136,230,1)] hover:text-white"
+          href="https://wa.me/message/SBOWMFDW3WJVG1"
+          target="_blank"
+          class="p-3 font-bold font-principal bg-[#e7c4ee] rounded-lg botaoContatoCabeca shadow-[1px_5px_24px_-10px_rgba(136,136,230,1)] hover:text-white"
           >Entrar em contato!</a
         >
       </div>
@@ -87,13 +88,13 @@ onMounted(() => {
         <a @click="closeMenu" href="/">Início</a>
       </div>
       <div id="link2" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/about">Quem somos</a>
+        <a @click="closeMenu" href="/site/about">Quem somos</a>
       </div>
       <div id="link3" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/#portfolio">Portfólio</a>
+        <a @click="closeMenu" href="/site/#portfolio">Portfólio</a>
       </div>
       <div id="link4" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/#pacotes">Pacotes</a>
+        <a @click="closeMenu" href="/site/#pacotes">Pacotes</a>
       </div>
     </div>
   </div>

@@ -96,14 +96,14 @@ onMounted(() => {
           bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto botaoContatoSomos"
           icone="fa-solid fa-arrow-right-long pl-4 pt-[8px] translate-y-1 -rotate-[50deg]"
           texto="Entrar em Contato!"
-          class="py-10 text-[18px] text-center botaoContatoSomosTotal"
+          class="py-10 md:pb-0 text-[18px] text-center botaoContatoSomosTotal"
         />
       </div>
       <div>
         <img
-          class="h-auto md:w-[2000px] pt-10 md:pt-16"
-          src="/images/projetos/projeto1.png"
-          alt=""
+          class="h-auto max-lg:hidden lg:w-[2000px] pt-10 md:pt-0"
+          src="/images/logoMKSanclasPreta.png"
+          alt="Logo Mk Sanclas"
         />
       </div>
     </div>

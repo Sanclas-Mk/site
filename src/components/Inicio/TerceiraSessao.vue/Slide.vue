@@ -7,7 +7,9 @@ defineProps(["project"]);
     <div
       class="border-b-2 border-[#D4FE6C] max-lg:mb-10 w-full lg:-translate-x-[250px] transform lg:-rotate-90 lg:absolute lg:w-[600px] lg:my-14"
     >
-      <h2 class="text-[24px] font-semibold font-principal my-6 text-start">
+      <h2
+        class="text-[24px] font-semibold font-principal my-6 text-start titleProjetos"
+      >
         {{ project.title }}
       </h2>
     </div>

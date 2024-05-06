@@ -13,7 +13,7 @@ onMounted(() => {
   let tlButton = gsap.timeline({
     scrollTrigger: {
       trigger: ".botaoFazemosTotal",
-      start: "-150px center",
+      start: "-200px center",
       end: "bottom center",
     },
   });
@@ -46,7 +46,7 @@ onMounted(() => {
   let textoInicio = gsap.timeline({
     scrollTrigger: {
       trigger: ".imgs",
-      start: "-120px center",
+      start: "-320px center",
       end: "bottom center",
     },
   });
@@ -71,30 +71,30 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="bg-[#0E100F] text-center lg:pt-12 xl:pt-16">
-    <div
-      class="xl:flex xl:justify-center xl:space-x-20 items-center xl:text-left"
-    >
+  <main class="bg-[#0E100F] text-center">
+    <div class="lg:flex lg:justify-center xl:space-x-20 lg:text-left">
       <!-- Textos -->
       <div>
         <div
-          class="font-principal text-white relative xl:text-left xl:w-[520px] mx-4 md:mx-14 xl:border-l-2 border-[#8888E6] xl:px-10 rounded-[4px] pt-10 xl:py-4"
+          class="font-principal text-white relative xl:text-left lg:w-[430px] xl:w-[700px] mx-4 md:mx-14 xl:mx-0 xl:pl-32 rounded-[4px] pt-10 xl:py-4 lg:pt-[100px] xl:pt-[120px]"
         >
-          <h1 class="text-[24px] md:text-[30px] font-semibold pb-4 textoInicio">
+          <h1
+            class="text-[24px] md:text-[30px] xl:text-[40px] font-semibold pb-4 textoInicio"
+          >
             Nós executamos
-            <span class="text-[#D4FE6C] px-2 py-1 rounded-full">
+            <span class="text-[#B2F900] px-2 py-1 rounded-full">
               a novidade</span
             >
 
             <br class="xl:hidden" />
             do mundo tecnológico <br />
             E encaixar você neste mundo <br />é a nossa
-            <span class="text-[#D4FE6C] px-2 py-1 rounded-full"
+            <span class="text-[#B2F900] px-2 py-1 rounded-full"
               >prioridade!</span
             >
           </h1>
           <h2
-            class="md:text-[18px] xl:text-[20px] text-[#C2C2C2] font-medium leading-8 pt-4 md:px-[150px] lg:px-[200px] xl:px-0 textoInicio"
+            class="md:text-[18px] xl:text-[24px] text-[#C2C2C2] font-medium leading-8 pt-4 md:px-[150px] lg:px-0 textoInicio"
           >
             Fazemos sites personalizados para o seu estilo e com o que há de
             mais novo no mundo da tecnologia.
@@ -103,20 +103,11 @@ onMounted(() => {
       </div>
       <!-- Imagem -->
       <div class="mt-14 imgs mx-6">
-        <div class="flex justify-center">
-          <img
-            class="min-h-[200px] max-h-[280px] xl:max-h-[300px] imgShow"
-            src="/images/projetos/projeto1.png"
-            alt=""
-          />
-        </div>
-        <div class="flex justify-center h-14">
-          <img
-            class="abosolute -translate-y-[220px] translate-x-[110px] h-[250px] w-auto md:h-[250px] lg:h-[280px] xl:h-[300px] md:-translate-y-[230px] md:translate-x-[150px] imgShow"
-            src="/images/projetos/projeto1mobile.png"
-            alt=""
-          />
-        </div>
+        <img
+          class="min-h-[200px] max-h-[280px] md:max-h-[400px] xl:max-h-[550px] w-auto max-lg:mx-auto max-lg:mb-10 imgShow"
+          src="/images/projetos/expor.png"
+          alt=""
+        />
       </div>
     </div>
 
@@ -124,11 +115,11 @@ onMounted(() => {
 
     <Botao
       link="#beneficios"
-      borda="border-[#FBCFE8] w-[176px] h-[40px] -translate-x-[88px] md:w-[210px] md:-translate-x-[106px] md:h-[45px] "
+      borda="border-[#FBCFE8] w-[176px] h-[40px] -translate-x-[88px] md:w-[210px] md:-translate-x-[106px] md:h-[45px]"
       bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[1px_5px_10px_-5px_rgba(136,136,230,1)] botaoFazemos md:text-[20px]"
       icone="fa-solid fa-arrow-down pl-2 pt-1"
       texto="O que fazemos?"
-      class="pb-20 pt-10 lg:pb-20 botaoFazemosTotal"
+      class="pb-20 lg:pb-20 botaoFazemosTotal"
     />
   </main>
 </template>

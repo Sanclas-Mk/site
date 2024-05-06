@@ -59,7 +59,7 @@ onMounted(() => {
     class="bg-[#0E100F] text-white text-center px-8 py-20 font-principal md:px-20 lg:text-left relative projetos"
   >
     <!-- Texto -->
-    <div class="pb-4 textsProjetos">
+    <div class="pb-4 xl:mx-[100px] textsProjetos">
       <h1
         class="font-semibold text-[20px] px-2 md:text-[26px] xl:text-[30px] titleProjeto"
       >

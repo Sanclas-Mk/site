@@ -40,7 +40,7 @@ onMounted(() => {
 
 
 <template>
-  <div id="pacotes" class="font-principal py-20 lg:px-0 bg-[#EEF2FF] pacotes">
+  <div id="pacotes" class="font-principal pt-20 lg:px-0 bg-white pacotes">
     <div>
       <div
         class="text-center pb-4 lg:text-left textsPacotes px-10 xl:pr-[420px] xl:px-44 lg:pb-20"
@@ -51,7 +51,8 @@ onMounted(() => {
           Maximizando sua experiência com os pacotes exclusivos da Mk Sanclas
         </h1>
         <h2 class="font-medium py-4 md:text-[18px] xl:text-[20px] titlePacotes">
-          Uma Jornada de Benefícios e Eficiência!
+          Nós temos os melhores planos para você. Uma Jornada de Benefícios e
+          Eficiência!
         </h2>
       </div>
       <div class="hidden text-center pacotePersonalizadoBotao">
