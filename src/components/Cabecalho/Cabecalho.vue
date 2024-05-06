@@ -88,13 +88,13 @@ onMounted(() => {
         <a @click="closeMenu" href="/">Início</a>
       </div>
       <div id="link2" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/site/about">Quem somos</a>
+        <a @click="closeMenu" href="/about">Quem somos</a>
       </div>
       <div id="link3" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/site/#portfolio">Portfólio</a>
+        <a @click="closeMenu" href="/#portfolio">Portfólio</a>
       </div>
       <div id="link4" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/site/#pacotes">Pacotes</a>
+        <a @click="closeMenu" href="/#pacotes">Pacotes</a>
       </div>
     </div>
   </div>
