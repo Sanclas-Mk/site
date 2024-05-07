@@ -55,14 +55,14 @@ onMounted(() => {
 <template>
   <div>
     <div
-      class="bg-[#0E100F] py-4 px-7 md:px-12 lg:pl-14 lg:pr-20 lg:pb-4 flex max-lg:justify-between items-center"
+      class="bg-[#0E100F] py-4 px-2 md:px-12 lg:pl-14 lg:pr-20 lg:pb-4 flex max-lg:justify-between items-center"
     >
       <img
-        class="h-[55px] w-auto md:h-[65px]"
-        src="/logoMKBranca.ico"
-        alt="Logo da Mk Sanclas, empresa de desenvolvimento de sites"
+        class="h-[105px] w-auto"
+        src="/images/logoMKSanclasBranca.png"
+        alt="Logo da Mk Sanclas, empresa de desenvolvimento de sites."
       />
-      <button type="button" @click="toggleMenu">
+      <button class="pr-6" type="button" @click="toggleMenu">
         <i
           v-if="!isMenuOpen"
           class="fa-solid fa-bars text-white text-[40px] md:text-[50px] lg:hidden"
@@ -88,7 +88,7 @@ onMounted(() => {
         <a @click="closeMenu" href="/">Início</a>
       </div>
       <div id="link2" class="hover:border-b border-[#FBCFE8]">
-        <a @click="closeMenu" href="/about">Quem somos</a>
+        <router-link @click="closeMenu" to="/about">Quem somos</router-link>
       </div>
       <div id="link3" class="hover:border-b border-[#FBCFE8]">
         <a @click="closeMenu" href="/#portfolio">Portfólio</a>

@@ -65,21 +65,25 @@ onMounted(() => {
       class="cards md:mx-20 lg:mx-0 pt-4 md:text-[18px] lg:grid lg:grid-cols-2 lg:gap-6 lg:mr-[120px] lg:mt-10 xl:mr-[350px] items-center"
     >
       <Card
+        abbrIP="Site Personalizado"
         estilo="bg-[#171615] flex justify-center text-white py-5 px-4 mt-7 rounded-[8px] lg:mt-0 card"
         icone="fa-regular fa-paper-plane"
         titulo="Sites Personalizados"
       />
       <Card
+        abbrIP="Técnicas SEO"
         estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-circle-check "
         titulo="Técnicas SEO"
       />
       <Card
+        abbrIP="Suporte Eficiente"
         estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-comments"
         titulo="Suporte Eficiente"
       />
       <Card
+        abbrIP="Manutenção"
         estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
         icone="fa-regular fa-handshake"
         titulo="Manutenção"

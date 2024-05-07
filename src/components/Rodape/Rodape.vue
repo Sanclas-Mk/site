@@ -10,7 +10,7 @@ import RedesSociais from "../RedesSociais.vue";
       <img
         class="h-32 w-32 max-md:mx-auto"
         src="/images/logoMKSanclasBranca.png"
-        alt=""
+        alt="Logo da Mk Sanclas, empresa de desenvolvimento de sites."
       />
       <redes-sociais class="md:hidden text-[28px] space-x-2" />
       <Navbar

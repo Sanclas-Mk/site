@@ -8,7 +8,6 @@ import Card from "../Card.vue";
       <Card
         estilo=" rounded-[10px] py-4 mt-5 lg:mt-5 lg:px-4 lg:pt-8 bg-[#D4FE6C] cardImportancia max-lg:text-center"
         estiloTitulo="font-bold text-[20px] py-2"
-        textoEstilo=""
         titulo="Credibilidade e Profissionalismo"
         texto="Pesquisas indicam que cerca de 75% dos consumidores julgam a credibilidade de uma empresa com base no design do seu site. Ter um site profissional e bem projetado pode melhorar significativamente a percepção do público sobre sua marca e seus produtos ou serviços."
       />

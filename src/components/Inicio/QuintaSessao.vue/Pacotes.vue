@@ -43,7 +43,7 @@ onMounted(() => {
   <div id="pacotes" class="font-principal pt-20 lg:px-0 bg-white pacotes">
     <div>
       <div
-        class="text-center pb-4 lg:text-left textsPacotes px-10 xl:pr-[420px] xl:px-44 lg:pb-20"
+        class="text-center pb-4 lg:text-left textsPacotes px-10 lg:pr-[300px] xl:pr-[550px] xl:px-44 lg:pb-20"
       >
         <h1
           class="text-[20px] md:text-[26px] xl:text-[30px] font-semibold titlePacotes"
@@ -55,27 +55,8 @@ onMounted(() => {
           Eficiência!
         </h2>
       </div>
-      <div class="hidden text-center pacotePersonalizadoBotao">
-        <botao
-          borda="border-black w-[250px] -translate-x-[140px] -translate-y-[14px]"
-          bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto "
-          icone="fa-solid fa-arrow-right-long pl-4 pt-[8px] translate-y-1 -rotate-[50deg]"
-          texto="Pacote Personalizado"
-          class="py-10 text-[18px] xl:mr-[100px]"
-        />
-      </div>
     </div>
 
     <pacotes-grupo />
-
-    <div class="text-center hidden">
-      <botao
-        borda="border-black w-[250px] -translate-x-[140px] -translate-y-[14px]"
-        bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto"
-        icone="fa-solid fa-arrow-right-long pl-4 pt-[8px] translate-y-1 -rotate-[50deg]"
-        texto="Pacote Personalizado"
-        class="py-10 text-[18px]"
-      />
-    </div>
   </div>
 </template>

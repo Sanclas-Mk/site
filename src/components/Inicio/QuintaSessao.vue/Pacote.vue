@@ -48,9 +48,10 @@ export default {
         <p class="font-semibold text-[18px] mt-4 pt-4 border-t-2">INCLUI:</p>
         <ul class="py-2 font-medium" :class="estiloBeneficios">
           <li v-for="(beneficio, index) in beneficios" :key="index">
-            <i
-              class="fa-solid fa-circle-check p-1 my-1 mr-2 rounded-full text-[#e7c4ee] text-[20px]"
-            ></i
+            <abbr title="Benefício">
+              <i
+                class="fa-solid fa-circle-check p-1 my-1 mr-2 rounded-full text-[#e7c4ee] text-[20px]"
+              ></i> </abbr
             >{{ beneficio }}
           </li>
         </ul>

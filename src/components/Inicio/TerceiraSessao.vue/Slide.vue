@@ -23,7 +23,7 @@ defineProps(["project"]);
       </div>
       <div class="flex justify-center">
         <img
-          class="absolute h-[230px] -translate-y-[200px] translate-x-[100px] w-auto md:h-[330px] md:-translate-y-[360px] md:translate-x-[220px] xl:translate-x-[300px] imgProjetoM"
+          class="absolute h-[230px] w-auto -translate-y-[200px] translate-x-[100px] md:h-[330px] md:-translate-y-[360px] md:translate-x-[220px] xl:translate-x-[300px] imgProjetoM"
           :src="project.imagemobile"
           :alt="project.alt"
         />

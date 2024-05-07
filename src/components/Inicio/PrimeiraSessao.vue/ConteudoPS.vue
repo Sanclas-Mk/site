@@ -105,8 +105,8 @@ onMounted(() => {
       <div class="mt-14 imgs mx-6">
         <img
           class="min-h-[200px] max-h-[280px] md:max-h-[400px] xl:max-h-[550px] w-auto max-lg:mx-auto max-lg:mb-10 imgShow"
-          src="/images/projetos/expor.png"
-          alt=""
+          src="/images/projetos/expor.webp"
+          alt="Dois celulares gigantes meio inclinados um em cima do outro. O celular que está em cima é um protótipo de um site de esmaltes que tem como destaque uma mulher sorrindo com as unhas pintadas olhando para o lado esquerdo. O segundo celular é um protótipo de um site e-commerce de venda de roupas."
         />
       </div>
     </div>
@@ -115,10 +115,11 @@ onMounted(() => {
 
     <Botao
       link="#beneficios"
-      borda="border-[#FBCFE8] w-[176px] h-[40px] -translate-x-[88px] md:w-[210px] md:-translate-x-[106px] md:h-[45px]"
+      abbr="Veja os nossos serviços"
+      borda="border-[#FBCFE8] w-[200px] h-[40px] -translate-x-[102px] md:w-[240px] md:-translate-x-[122px] md:h-[45px]"
       bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[1px_5px_10px_-5px_rgba(136,136,230,1)] botaoFazemos md:text-[20px]"
       icone="fa-solid fa-arrow-down pl-2 pt-1"
-      texto="O que fazemos?"
+      texto="O que oferecemos?"
       class="pb-20 lg:pb-20 botaoFazemosTotal"
     />
   </main>

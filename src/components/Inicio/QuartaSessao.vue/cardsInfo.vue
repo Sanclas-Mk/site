@@ -19,8 +19,9 @@ onMounted(() => {
 
 <template>
   <div class="md:mx-20 md:text-[19px] lg:mx-0 lg:grid lg:grid-cols-2 lg:gap-4">
-    <a href="about#importancia">
+    <router-link to="/about">
       <Card
+        abbrIS="Saiba mais"
         estilo="rounded-[10px] py-4 px-2 mt-2 lg:mt-5 lg:px-4 lg:pt-8 bg-[#D4FE6C] hover:shadow-[0px_2px_14px_-6px_rgba(34,230,53,0.68)] cardImportancia"
         estiloTitulo="font-bold"
         titulo="Credibilidade e Profissionalismo"
@@ -30,10 +31,11 @@ onMounted(() => {
         saiba="Saiba mais"
         estiloSaiba="flex items-center lg:pb-4 lg:space-x-5"
       />
-    </a>
+    </router-link>
 
-    <a href="about#importancia">
+    <router-link to="/about">
       <Card
+        abbrIS="Saiba mais"
         estilo="rounded-[10px] py-4 px-2 mt-5 lg:px-4 lg:pt-8 border border-black hover:shadow-[0px_2px_14px_-6px_rgba(92,92,92,1)] cardImportancia"
         estiloTitulo="font-bold"
         titulo="Marketing e Custos Reduzidos"
@@ -43,10 +45,11 @@ onMounted(() => {
         saiba="Saiba mais"
         estiloSaiba="flex items-center lg:pb-4 lg:space-x-5"
       />
-    </a>
+    </router-link>
 
-    <a href="about#importancia">
+    <router-link to="/about">
       <Card
+        abbrIS="Saiba mais"
         estilo="rounded-[10px] py-4 px-2 mt-5 lg:mt-0 lg:px-4 lg:pt-8 border border-black hover:shadow-[0px_2px_14px_-6px_rgba(92,92,92,1)] cardImportancia"
         estiloTitulo="font-bold"
         titulo="Acesso 24 horas"
@@ -56,10 +59,11 @@ onMounted(() => {
         saiba="Saiba mais"
         estiloSaiba="flex items-center lg:pb-4 lg:space-x-5"
       />
-    </a>
+    </router-link>
 
-    <a href="about#importancia">
+    <router-link to="/about">
       <Card
+        abbrIS="Saiba mais"
         estilo="rounded-[10px] py-4 px-2 mt-5 lg:mt-0 lg:px-4 lg:pt-8 border border-black hover:shadow-[0px_2px_14px_-6px_rgba(92,92,92,1)] cardImportancia"
         estiloTitulo="font-bold"
         titulo="Destaque e Relevância"
@@ -69,6 +73,6 @@ onMounted(() => {
         saiba="Saiba mais"
         estiloSaiba="flex items-center lg:pb-4 lg:space-x-5"
       />
-    </a>
+    </router-link>
   </div>
 </template>
