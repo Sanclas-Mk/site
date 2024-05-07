@@ -24,17 +24,6 @@ onMounted(() => {
     duration: 0.8,
     stagger: 0.2,
   });
-
-  gsap.from(".pacotePersonalizadoBotao", {
-    y: -100,
-    opacity: 0,
-    duration: 0.8,
-    scrollTrigger: {
-      trigger: ".pacotePersonalizadoBotao",
-      start: "top 80%",
-      end: "top center",
-    },
-  });
 });
 </script>
 

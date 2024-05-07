@@ -21,7 +21,7 @@
     <div :class="estiloSaiba">
       <p class="font-bold max-lg:hidden">{{ saiba }}</p>
       <abbr :title="abbrIS"
-        ><i :class="seta" ref="seta" class="right-4 pt-[2px] max-lg:absolute">
+        ><i :class="seta" ref="seta" class="right-4 top-[28px] max-lg:absolute">
         </i
       ></abbr>
     </div>

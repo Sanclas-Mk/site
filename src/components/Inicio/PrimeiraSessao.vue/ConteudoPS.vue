@@ -113,15 +113,25 @@ onMounted(() => {
 
     <!-- Botão -->
 
-    <Botao
-      link="#beneficios"
-      abbr="Veja os nossos serviços"
-      borda="border-[#FBCFE8] w-[200px] h-[40px] -translate-x-[102px] md:w-[240px] md:-translate-x-[122px] md:h-[45px]"
-      bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[1px_5px_10px_-5px_rgba(136,136,230,1)] botaoFazemos md:text-[20px]"
-      icone="fa-solid fa-arrow-down pl-2 pt-1"
-      texto="O que oferecemos?"
-      class="pb-20 lg:pb-20 botaoFazemosTotal"
-    />
+    <div class="pb-20 lg:pb-20 botaoFazemosTotal">
+      <div class="z-0 relative">
+        <span
+          class="h-12 border absolute border-[#FBCFE8] w-[200px] h-[40px] -translate-x-[102px] md:w-[240px] md:-translate-x-[122px] md:h-[45px]"
+        ></span>
+      </div>
+      <div class="z-10 relative">
+        <a href="#beneficios">
+          <button
+            class="py-2 px-4 font-principal font-bold text-24 flex mx-auto bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] text-black shadow-[1px_5px_10px_-5px_rgba(136,136,230,1)] botaoFazemos md:text-[20px]"
+          >
+            <p>O que oferecemos?</p>
+            <abbr title="Veja os nossos serviços"
+              ><i class="fa-solid fa-arrow-down pl-2 pt-1"></i
+            ></abbr>
+          </button>
+        </a>
+      </div>
+    </div>
   </main>
 </template>
 

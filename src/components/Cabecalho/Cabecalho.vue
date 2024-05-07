@@ -62,12 +62,14 @@ onMounted(() => {
         src="/images/logoMKSanclasBranca.png"
         alt="Logo da Mk Sanclas, empresa de desenvolvimento de sites."
       />
-      <button class="pr-6" type="button" @click="toggleMenu">
-        <i
-          v-if="!isMenuOpen"
-          class="fa-solid fa-bars text-white text-[40px] md:text-[50px] lg:hidden"
-        ></i>
-        <i v-else class="fa-solid fa-x text-white text-[30px] lg:hidden"></i>
+      <button class="pr-6" type="button" aria-label="Menu" @click="toggleMenu">
+        <abbr title="Menu">
+          <i
+            v-if="!isMenuOpen"
+            class="fa-solid fa-bars text-white text-[40px] md:text-[50px] lg:hidden"
+          ></i>
+          <i v-else class="fa-solid fa-x text-white text-[30px] lg:hidden"></i>
+        </abbr>
       </button>
       <Navbar class="max-lg:hidden lg:mx-auto text-[22px]" />
       <div class="lg:pt-2 max-lg:invisible max-lg:absolute">
