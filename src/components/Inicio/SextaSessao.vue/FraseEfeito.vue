@@ -65,7 +65,7 @@ onMounted(() => {
         para construir o futuro digital do seu negócio!
       </h1>
       <botao
-        link="https://wa.me/message/SBOWMFDW3WJVG1"
+        link="https://api.whatsapp.com/message/SBOWMFDW3WJVG1?autoload=1&app_absent=0"
         abbr="Ir para o whatsapp"
         borda="border-black w-[216px] -translate-x-[110px] md:w-[230px] md:-translate-x-[118px]"
         bg="bg-gradient-to-r from-[#8B9EFF] to-[#EAEDFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 botaoContato"

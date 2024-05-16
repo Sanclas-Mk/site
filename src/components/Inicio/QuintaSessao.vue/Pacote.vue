@@ -33,7 +33,9 @@ export default {
       </div>
       <!-- Botão Pacote -->
       <div>
-        <a href="https://wa.me/message/SBOWMFDW3WJVG1" target="_blank"
+        <a
+          href="https://api.whatsapp.com/message/SBOWMFDW3WJVG1?autoload=1&app_absent=0"
+          target="_blank"
           ><button
             :class="botao"
             class="font-bold text-[20px] py-2 my-2 w-full rounded-md"

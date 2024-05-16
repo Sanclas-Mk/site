@@ -54,10 +54,10 @@ onMounted(() => {
           </p>
         </div>
         <Botao
-          link="https://wa.me/message/SBOWMFDW3WJVG1"
+          link="https://api.whatsapp.com/message/SBOWMFDW3WJVG1?autoload=1&app_absent=0"
           abbr="Ir para o whatsapp"
           borda="border-black w-[230px] -translate-x-[135px] -translate-y-[10px]"
-          bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-3 mx-auto botaoContatoSomos"
+          bg="bg-gradient-to-r from-[#FBCFE8] to-[#8B9EFF] shadow-[0px_2px_24px_-9px_rgba(92,92,92,1)] py-2 pt-3 mx-auto botaoContatoSomos"
           icone="fa-solid fa-arrow-right-long pl-4 pt-[8px] translate-y-1 -rotate-[50deg]"
           texto="Entrar em Contato!"
           class="py-10 md:pb-0 text-[18px] text-center botaoContatoSomosTotal"

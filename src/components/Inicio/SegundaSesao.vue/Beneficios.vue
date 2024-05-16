@@ -1,7 +1,7 @@
 <script setup>
 import Card from "../../Card.vue";
 import { gsap, ScrollTrigger } from "gsap/all";
-import { onMounted, ref } from "vue";
+import { ref, onMounted } from "vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,10 +9,13 @@ ScrollTrigger.defaults({
   toggleActions: "play none play reverse",
 });
 
-onMounted(() => {
+const caixaRef = ref(null);
+const cardsRef = ref(null);
+
+const setupAnimations = () => {
   let tlTitle = gsap.timeline({
     scrollTrigger: {
-      trigger: ".caixa",
+      trigger: caixaRef.value,
       start: "top 80%",
       end: "bottom center",
     },
@@ -26,7 +29,7 @@ onMounted(() => {
 
   let tlCards = gsap.timeline({
     scrollTrigger: {
-      trigger: ".cards",
+      trigger: cardsRef.value,
       start: "top 80%",
       end: "bottom center",
     },
@@ -37,12 +40,17 @@ onMounted(() => {
     duration: 0.5,
     stagger: 0.2,
   });
+};
+
+onMounted(() => {
+  setupAnimations();
 });
 </script>
 
 <template>
   <div
     id="beneficios"
+    ref="caixaRef"
     class="text-center lg:text-left font-principal px-8 py-20 pt-10 md:px-20 font-semibold relative caixa xl:py-32 xl:mx-[100px]"
   >
     <!-- Texto -->
@@ -62,6 +70,7 @@ onMounted(() => {
 
     <!-- Cards com os Benefícios -->
     <div
+      ref="cardsRef"
       class="cards md:mx-20 lg:mx-0 pt-4 md:text-[18px] lg:grid lg:grid-cols-2 lg:gap-6 lg:mr-[120px] lg:mt-10 xl:mr-[350px] items-center"
     >
       <Card
@@ -72,19 +81,19 @@ onMounted(() => {
       />
       <Card
         abbrIP="Técnicas SEO"
-        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
+        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0 card"
         icone="fa-regular fa-circle-check "
         titulo="Técnicas SEO"
       />
       <Card
         abbrIP="Suporte Eficiente"
-        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
+        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0 card"
         icone="fa-regular fa-comments"
         titulo="Suporte Eficiente"
       />
       <Card
         abbrIP="Manutenção"
-        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0  card"
+        estilo="border-2 border-black flex justify-center py-5 px-4 mt-4 rounded-[8px] lg:mt-0 card"
         icone="fa-regular fa-handshake"
         titulo="Manutenção"
       />

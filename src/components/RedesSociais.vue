@@ -7,7 +7,10 @@
         ></i>
       </abbr>
     </a>
-    <a href="https://wa.me/message/SBOWMFDW3WJVG1" target="_blank">
+    <a
+      href="https://api.whatsapp.com/message/SBOWMFDW3WJVG1?autoload=1&app_absent=0"
+      target="_blank"
+    >
       <abbr title="Whatsapp">
         <i
           class="fa-brands fa-whatsapp bg-[#EEF2FF] px-2 py-1 rounded-full text-black cursor-pointer"

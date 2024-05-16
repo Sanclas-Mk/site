@@ -74,7 +74,7 @@ onMounted(() => {
       <Navbar class="max-lg:hidden lg:mx-auto text-[22px]" />
       <div class="lg:pt-2 max-lg:invisible max-lg:absolute">
         <a
-          href="https://wa.me/message/SBOWMFDW3WJVG1"
+          href="https://api.whatsapp.com/message/SBOWMFDW3WJVG1?autoload=1&app_absent=0"
           target="_blank"
           class="p-3 font-bold font-principal bg-[#e7c4ee] rounded-lg botaoContatoCabeca shadow-[1px_5px_24px_-10px_rgba(136,136,230,1)] hover:text-white"
           >Entrar em contato!</a
